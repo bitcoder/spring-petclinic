@@ -29,6 +29,18 @@
 
     <jacoco.version>0.8.2</jacoco.version>
 
+
+        <xray.projectKey>CALC</xray.projectKey>
+        <!--
+        <xray.testExecKey></xray.testExecKey>
+        <xray.testPlanKey></xray.testPlanKey>
+        <xray.testEnvironments></xray.testEnvironments>
+        <xray.fixVersion></xray.fixVersion>
+        <xray.revision></xray.revision>
+        -->
+ 
+        <xray.surefire.location>${basedir}/target/surefire-reports</xray.surefire.location>
+
   </properties>
 
   <dependencies>
@@ -254,6 +266,12 @@
         <enabled>false</enabled>
       </snapshots>
     </pluginRepository>
-  </pluginRepositories>
+        <pluginRepository>
+            <id>xpand-plugins</id>
+            <name>xpand-plugins</name>
+            <url>http://maven.xpand-it.com/artifactory/releases</url>
+    </pluginRepository>
+ 
+ </pluginRepositories>
 
 </project>
